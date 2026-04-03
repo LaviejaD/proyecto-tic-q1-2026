@@ -2,7 +2,7 @@ import "./app.css";
 import { Navegation } from "./components/navegation.tsx";
 import { Home } from "./pages/home.tsx";
 import { SeguridadInformacion } from "./pages/SeguridadInformacion.tsx";
-import { Router, goTo } from "./router.tsx";
+import { Router } from "./router.tsx";
 
 export function App() {
   return (
