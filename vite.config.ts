@@ -9,6 +9,9 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 8080,
     strictPort: true,
+    watch: {
+      usePolling: true, // Obligatorio para detectar cambios en volúmenes Docker
+    },
   },
   plugins: [preact(), tailwindcss()],
 });
