@@ -5,10 +5,10 @@ export const menuItems = [
   { name: "🔒 Seguridad de la Información", route: "2" },
   { name: "⚖️ Ética Digital", route: "3" },
   { name: "✅ Buenas Prácticas", route: "4" },
-  { name: "📊 Caso Práctico", route: "caso" },
-  { name: "🎬 Recursos Multimedia", route: "5" },
-  { name: "📖 Glosario", route: "6" },
-  { name: "📞 Contacto", route: "7" },
+  { name: "📊 Caso Práctico", route: "5" },
+  { name: "🎬 Recursos Multimedia", route: "6" },
+  { name: "📖 Glosario", route: "7" },
+  { name: "📞 Contacto", route: "8" },
 ];
 export const Navegation = () => {
   const [isOpen, setIsOpen] = useState(false);
