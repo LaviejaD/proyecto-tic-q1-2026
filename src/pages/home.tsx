@@ -1,3 +1,4 @@
+import { goTo } from "../router";
 export const Home = () => {
   return (
     <>
@@ -22,7 +23,7 @@ export const Home = () => {
       <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden mb-12">
         <div class="border-b border-gray-200 bg-gray-50 px-6 py-4">
           <h2 class="text-2xl font-bold text-gray-800">
-            📌 Sobre este Proyecto Final
+            📌 Sobre este Proyecto
           </h2>
         </div>
         <div class="p-6 md:p-8">
@@ -46,44 +47,72 @@ export const Home = () => {
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div class="flex items-start space-x-3">
-              <span class="text-2xl">🔐</span>
-              <div>
-                <h3 class="font-semibold text-gray-800">
-                  Seguridad de la Información
-                </h3>
-                <p class="text-gray-600 text-sm">
-                  Amenazas, protección, IA, Big Data, Blockchain e IoT
-                </p>
+            <button
+              className={"cursor-pointer group hover:bg-blue-50"}
+              onClick={() => goTo("2")}
+            >
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">🔐</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 group-hover:text-blue-600">
+                    Seguridad de la Información
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Amenazas, protección, IA, Big Data, Blockchain e IoT
+                  </p>
+                </div>
+              </div>{" "}
+            </button>
+
+            <button
+              onClick={() => goTo("3")}
+              class="group hover:bg-blue-50 cursor-pointer"
+            >
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">⚖️</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 group-hover:text-blue-600">
+                    Ética Digital
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Uso responsable, derechos de autor, huella digital
+                  </p>
+                </div>
+              </div>{" "}
+            </button>
+            <button
+              onClick={() => goTo("4")}
+              class="group hover:bg-blue-50 cursor-pointer"
+            >
+              {" "}
+              <div class="flex items-start space-x-3  ">
+                <span class="text-2xl">✅</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 group-hover:text-blue-600">
+                    Buenas Prácticas
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Protección de datos, redes sociales seguras
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <span class="text-2xl">⚖️</span>
-              <div>
-                <h3 class="font-semibold text-gray-800">Ética Digital</h3>
-                <p class="text-gray-600 text-sm">
-                  Uso responsable, derechos de autor, huella digital
-                </p>
+            </button>
+            <button
+              onClick={() => goTo("4")}
+              class="group hover:bg-blue-50 cursor-pointer"
+            >
+              <div class="flex items-start space-x-3">
+                <span class="text-2xl">📊</span>
+                <div>
+                  <h3 class="font-semibold text-gray-800 group-hover:text-blue-600">
+                    Caso Práctico Real
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Análisis de ciberataques y soluciones éticas
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <span class="text-2xl">✅</span>
-              <div>
-                <h3 class="font-semibold text-gray-800">Buenas Prácticas</h3>
-                <p class="text-gray-600 text-sm">
-                  Protección de datos, redes sociales seguras
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <span class="text-2xl">📊</span>
-              <div>
-                <h3 class="font-semibold text-gray-800">Caso Práctico Real</h3>
-                <p class="text-gray-600 text-sm">
-                  Análisis de ciberataques y soluciones éticas
-                </p>
-              </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
