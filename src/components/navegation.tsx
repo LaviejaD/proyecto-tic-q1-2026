@@ -5,9 +5,9 @@ export const menuItems = [
   { name: "🔒 Seguridad de la Información", route: "2" },
   { name: "⚖️ Ética Digital", route: "3" },
   { name: "✅ Buenas Prácticas", route: "4" },
-  { name: "📊 Caso Práctico", route: "5" },
+  { name: "📊 Casos Prácticos", route: "5" },
   { name: "🎬 Recursos Multimedia", route: "6" },
-  { name: "📖 Glosario", route: "7" },
+  // { name: "📖 Glosario", route: "7" },
   { name: "📞 Contacto", route: "8" },
 ];
 export const Navegation = () => {

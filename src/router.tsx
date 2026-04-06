@@ -22,7 +22,7 @@ export const Router: FunctionComponent<RouterProps> = ({
     updateRoute();
     window.addEventListener("popstate", updateRoute);
     return () => window.removeEventListener("popstate", updateRoute);
-  }, [defaultRoute]);
+  }, []);
 
   // @ts-ignore
   const activeComponent = children.find(
