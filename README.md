@@ -90,11 +90,6 @@ src/
 Este proyecto es de código abierto y se comparte con fines educativos.  
 Puedes usarlo, modificarlo y distribuirlo libremente.
 
-## ✉️ Contacto
-
-¿Preguntas o sugerencias? Abre un issue en GitHub o escribe a:  
-📧 lavieja.d@ejemplo.com
-
 ---
 Hecho con ❤️ para un mundo digital más seguro y ético.
 
