@@ -2,6 +2,11 @@ export const CasosPracticos = () => {
   return (
     <>
       <div class="mb-12">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg"
+          alt="Casos prácticos de ciberseguridad"
+          className="w-full h-48 object-cover rounded-xl mb-6 shadow-md"
+        />
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           4. Casos Prácticos o Situaciones Reales
         </h1>

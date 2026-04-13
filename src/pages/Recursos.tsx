@@ -2,6 +2,11 @@ export const Recursos = () => {
   return (
     <>
       <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_640.jpg"
+          alt="Recursos multimedia"
+          className="w-full h-48 object-cover rounded-xl mb-6 shadow-md"
+        />
         <div class="mb-12">
           <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             5. Recursos Multimedia

@@ -12,6 +12,7 @@ import { EticaDigital } from "./pages/EticaDigital.tsx";
 import { CasosPracticos } from "./pages/CasosPracticos.tsx";
 import { Contactame } from "./pages/Contactame.tsx";
 import { Recursos } from "./pages/Recursos.tsx";
+import { Footer } from "./components/Footer.tsx";
 
 export function App() {
   const [show, setShow] = useState(true);
@@ -27,16 +28,16 @@ export function App() {
     }
     setLastScrollY(window.scrollY);
   };
+  useEffect(() => goTo("1"), []);
 
   useEffect(() => {
     window.addEventListener("scroll", controlShow);
 
     //If the page was reloaded, it doesn't take the current argument and the rendering becomes corrupted; this load by default the page #1 Home to avoid this problem.
-    goTo("1");
     return () => {
       window.removeEventListener("scroll", controlShow);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <>
@@ -64,7 +65,7 @@ export function App() {
           <Contactame route="8" />
         </Router>
       </main>
-      <footer class="mt-auto"> footer </footer>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,11 @@ export const BuenasPracticas = () => {
   return (
     <>
       <div class="mb-12">
+        <img
+          src="https://media.istockphoto.com/id/1366554092/es/foto/el-programador-est%C3%A1-iniciando-sesi%C3%B3n-y-cifr%C3%A1ndolo-por-seguridad-con-tecnolog%C3%ADa-de.jpg?b=1&s=612x612&w=0&k=20&c=FEBxDK-w0Murn5Ghly-5ku1oWE_SajYCs4E_HR6_HNI="
+          alt="Buenas prácticas de seguridad"
+          className="w-full h-48 object-cover rounded-xl mb-6 shadow-md"
+        />
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           3. Buenas Prácticas
         </h1>

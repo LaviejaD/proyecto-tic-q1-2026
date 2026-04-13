@@ -1,6 +1,13 @@
 export const SeguridadInformacion = () => {
   return (
     <>
+      <div className="mb-12">
+        <img
+          src="https://media.istockphoto.com/id/1325092772/photo/iiluminated-padlock-icon-on-blue-background-digital-data-protect-cyber-data-information.jpg?b=1&s=612x612&w=0&k=20&c=66uDV7sWEl83K4hbXlSmMju5iq0_Dm9xo5-DI1fPwIk="
+          alt="Seguridad de la información"
+          className="w-full h-48 object-cover rounded-xl mb-6 shadow-md"
+        />
+      </div>
       <div class="mb-12">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           1. Seguridad de la Información

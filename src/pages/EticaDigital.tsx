@@ -2,6 +2,11 @@ export const EticaDigital = () => {
   return (
     <>
       <div class="mb-12">
+        <img
+          src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg"
+          alt="Ética digital"
+          className="w-full h-48 object-cover rounded-xl mb-6 shadow-md"
+        />
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           2. Ética Digital
         </h1>

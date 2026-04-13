@@ -1,39 +1,45 @@
 export const Contactame = () => {
   return (
     <>
-      {" "}
-      <div class="mb-12 text-center">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Contacto
-        </h1>
-        <p class="text-lg text-gray-600">
+      <div className="mb-12 text-center">
+        <div className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg px-6 py-2 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white">
+            Contacto
+          </h1>
+        </div>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
           ¿Tienes dudas, comentarios o sugerencias sobre seguridad digital y
           ética en la red? Escríbeme.
         </p>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
-          <div class="flex flex-col items-center text-center">
-            <img
-              src="https://github.com/LaviejaD.png"
-              alt="Foto de perfil de LaviejaD"
-              class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md object-cover"
-            />
-            <h2 class="text-2xl font-bold text-gray-800 mt-4">LaviejaD</h2>
-            <p class="text-gray-500">
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        {/* Tarjeta de perfil con más color */}
+        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-xl p-6 md:p-8 border border-blue-200">
+          <div className="flex flex-col items-center text-center">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-md opacity-70"></div>
+              <img
+                src="https://github.com/LaviejaD.png"
+                alt="Foto de perfil de LaviejaD"
+                className="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover relative z-10"
+              />
+            </div>
+            <h2 className="text-2xl font-bold text-gray-800 mt-4">LaviejaD</h2>
+            <p className="text-blue-700 font-medium bg-blue-100 px-3 py-1 rounded-full inline-block mt-1">
               Estudiante de Tecnologías de la Información
             </p>
-            <div class="w-16 h-1 bg-blue-500 rounded-full my-3"></div>
-            <p class="text-gray-600 text-sm max-w-xs">
+            <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full my-3"></div>
+            <p className="text-gray-700 text-sm max-w-xs">
               Apasionado por la ciberseguridad, la ética digital y el desarrollo
               web. Este sitio es parte de mi proyecto final para TIC I.
             </p>
           </div>
 
-          <div class="mt-6 space-y-3">
-            <div class="flex items-center justify-center space-x-2 text-gray-700">
+          <div className="mt-6 space-y-3">
+            <div className="flex items-center justify-center space-x-2 bg-white/60 backdrop-blur-sm rounded-full py-2 px-4 shadow-sm">
               <svg
-                class="w-5 h-5 text-blue-600"
+                className="w-5 h-5 text-blue-600"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -42,78 +48,63 @@ export const Contactame = () => {
               <a
                 href="https://github.com/LaviejaD"
                 target="_blank"
-                class="text-blue-600 hover:underline"
+                className="text-blue-700 hover:text-blue-900 font-medium"
               >
                 github.com/LaviejaD
               </a>
             </div>
           </div>
 
-          <div class="mt-8 flex justify-center space-x-5">
-            <a href="#" class="text-gray-500 hover:text-blue-600 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
-              </svg>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-blue-600 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.104c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0021.897-11.5c0-.21-.005-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-              </svg>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-blue-600 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-              </svg>
-            </a>
-            <a href="#" class="text-gray-500 hover:text-blue-600 transition">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zM9 16.5v-9l7 4.5-7 4.5z" />
-              </svg>
-            </a>
-          </div>
+          <div className="mt-8 flex justify-center space-x-5"></div>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
-          <h2 class="text-2xl font-bold text-gray-800 mb-4">
-            📩 Envíame un mensaje
-          </h2>
-          <p class="text-gray-600 mb-6">
+        {/* Tarjeta del formulario con gradiente y color */}
+        <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl shadow-xl p-6 md:p-8 border border-purple-200">
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-4 mb-6 -mt-2 shadow-lg">
+            <h2 className="text-2xl font-bold text-white flex items-center justify-center gap-2">
+              <span>📩</span> Envíame un mensaje
+            </h2>
+          </div>
+          <p className="text-gray-700 mb-6 text-center">
             Utiliza el siguiente formulario para dejarme tu consulta, reportar
             algún error o compartir tu opinión sobre el sitio. ¡Te responderé lo
             antes posible!
           </p>
 
-          <div class="mb-8">
+          <div className="mb-8 rounded-xl overflow-hidden shadow-md border border-white/50">
             <iframe
               src="https://forms.cloud.microsoft/r/X8v1rFw2aZ"
               width="100%"
               height="500"
-              frameborder="0"
-              class="rounded-lg border border-gray-200"
-              style="max-width:100%"
+              frameBorder="0"
+              className="rounded-lg bg-white"
+              style={{ maxWidth: "100%" }}
+              title="Formulario de contacto"
             ></iframe>
           </div>
 
-          <div class="border-t border-gray-200 pt-5 mt-2">
-            <div class="flex items-start space-x-3 text-sm text-gray-500">
+          <div className="border-t border-purple-200 pt-5 mt-2">
+            <div className="flex items-start space-x-3 text-sm text-gray-700 bg-white/50 rounded-lg p-3 backdrop-blur-sm">
               <svg
-                class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
               <p>
-                <strong class="text-gray-700">Leyenda de privacidad:</strong>{" "}
+                <strong className="text-gray-800">
+                  Leyenda de privacidad:
+                </strong>{" "}
                 Los datos que compartas en este formulario serán utilizados
                 únicamente para responder tus consultas y mejorar el contenido
-                del sitio. No compartiremos tu información con terceros.
+                del sitio.
               </p>
             </div>
           </div>
