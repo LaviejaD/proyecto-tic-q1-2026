@@ -52,7 +52,7 @@ Sigue estos pasos para levantar el proyecto en tu máquina:
    ```
 
 4. **Abrir en el navegador**  
-   El servidor se iniciará en `http://localhost:5173` (puerto por defecto de Vite).
+   El servidor se iniciará en `http://localhost:/proyecto-tic-q1-2026/` .
 
 ## 📦 Construcción para producción
 
